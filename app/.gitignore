@@ -3,7 +3,7 @@ app/__pycache__/
 *pyc
 
 # SQLite
-app/*.db
+*.db
 
 # entornos virtuales
 app/venv/

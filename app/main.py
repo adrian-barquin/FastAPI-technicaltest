@@ -1,7 +1,7 @@
 from fastapi import FastAPI
-from app.database.base import Base
-from app.database.session import engine
-from app.routers.users import router as user_router
+from database.base import Base
+from database.session import engine
+from routers.users import router as user_router
 
 app = FastAPI(
     title="Usuarios y Vehículos: Async, API",

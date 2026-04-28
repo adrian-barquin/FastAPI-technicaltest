@@ -1,6 +1,6 @@
 from sqlalchemy import Boolean, String
 from sqlalchemy.orm import Mapped, mapped_column, relationship
-from app.database.base import Base
+from database.base import Base
 
 class User(Base):
     __tablename__="user"

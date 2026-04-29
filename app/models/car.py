@@ -1,6 +1,6 @@
 from sqlalchemy import String, ForeignKey
 from sqlalchemy.orm import Mapped, mapped_column
-from app.models.vehicle import Vehicle
+from models.vehicle import Vehicle
 
 class Car(Vehicle):
     __tablename__ = "cars"

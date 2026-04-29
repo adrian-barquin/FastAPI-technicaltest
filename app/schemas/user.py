@@ -1,5 +1,5 @@
 from pydantic import BaseModel, EmailStr
-from app.schemas.vehicle import VehicleOut
+from schemas.vehicle import VehicleOut
 
 class UserCreate(BaseModel):
     name: str

@@ -3,13 +3,12 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select
 from sqlalchemy.orm import selectinload
 
-from app.database.session import get_db
-from app.models.user import User
-from app.models.vehicle import Vehicle
-from app.schemas.user import UserCreate, UserWithInactiveVehicles
-from app.core.logging import logger
-
-from app.schemas.user import UserCreate
+from database.session import get_db
+from models.user import User
+from models.vehicle import Vehicle
+from schemas.user import UserCreate, UserWithInactiveVehicles
+from core.logging import logger
+from schemas.user import UserCreate
 
 router = APIRouter(prefix="/users", tags=["users"])
 

@@ -1,10 +1,10 @@
 from typing import TYPE_CHECKING
 from sqlalchemy import String, Boolean, ForeignKey
 from sqlalchemy.orm import Mapped, mapped_column, relationship
-from app.database.base import Base
+from database.base import Base
 
 if TYPE_CHECKING:
-    from app.models.user import User
+    from models.user import User
 
 class Vehicle(Base):
     __tablename__="vehicle"
